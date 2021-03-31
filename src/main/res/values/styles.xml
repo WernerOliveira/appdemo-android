@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BotaoPrimario" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/BtnPrimario</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/BtnPrimarioTxt</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="BotaoSecundario" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/BtnSecundario</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BotaoButao" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/BtnButaoTxt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/BtnButao</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="BotaoButo" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/BtnButoTxt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/BtnButo</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BotaoButinho" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/BtnButinhoTxt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/BtnButinho</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="BotaoCalc" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">@color/BtnPrimario</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/BtnPrimarioTxt</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextoView" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

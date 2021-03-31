@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        style="@style/TextoView"
+        android:text="nanikore" />
+
+    <Button
+        android:id="@+id/btnButao"
+        style="@style/BotaoButao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Butão" />
+
+    <Button
+        android:id="@+id/btnButo"
+        style="@style/BotaoButo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Buto" />
+
+    <Button
+        android:id="@+id/btnButinho"
+        style="@style/BotaoButinho"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Butinho" />
+
+</LinearLayout>
