@@ -2,6 +2,10 @@
 <resources>
     <color name="BtnPrimario">#A3AEBC</color>
     <color name="BtnPrimarioTxt">#FCFDFD</color>
+    <color name="FundoPrimario">#759C9C</color>
+    <color name="FundoDarko">#878787</color>
+    <color name="colorPrimaryDark">#475050</color>
+    <color name="colorDarkoDark">#4C4A4A</color>
     <color name="BtnSecundario">#6FB6ED</color>
     <color name="BtnButao">#FFC37A</color>
     <color name="BtnButaoTxt">#A6681D</color>

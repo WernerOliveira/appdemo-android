@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">OpTs</string>
+    <string name="txt_user">Usuário</string>
+    <string name="txt_senha">Senha</string>
+    <string name="text_login">Login</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_toast">Toast</string>
+    <string name="btn_verButoes">Ver Butões</string>
+    <string name="pref_key">SharedPreferences</string>
 </resources>

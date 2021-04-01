@@ -10,6 +10,7 @@
     tools:context=".MenuActivity">
 
     <TextView
+        android:id="@+id/lblUsuario_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Menu"
@@ -20,14 +21,23 @@
         android:id="@+id/btnMain_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver butoes"
+        android:text="@string/btn_verButoes"
         style="@style/BotaoSecundario"/>
 
     <Button
         android:id="@+id/btnToast_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Toast"
+        android:text="@string/btn_toast"
         style="@style/BotaoSecundario"/>
+
+    <Button
+        android:id="@+id/btnLogout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_logout"
+        android:layout_marginTop="330dp"
+        style="@style/BotaoLogout"/>
+
 
 </LinearLayout>
