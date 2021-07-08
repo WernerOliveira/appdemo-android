@@ -8,7 +8,7 @@
     android:layout_margin="10dp"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <TextView
         android:id="@+id/lblTitulo"

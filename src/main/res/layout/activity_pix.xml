@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".view.PixActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_pix_p5"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/lblChave_pix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/lblNegrito"
+        android:text="xxx.xxx.xxx-xx" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minha chave"/>
+
+    <TextView
+        android:id="@+id/lblSaldo_pix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/PixSaldo"
+        android:text="R$ 1000,00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo em conta" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/txtValor_pix"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_margin="5dp"
+            android:textAlignment="center"/>
+        
+        <Button
+            android:id="@+id/btnPagar_pix"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Pagar" />
+
+        <Button
+            android:id="@+id/btnReceber_pix"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Receber" />
+
+    </LinearLayout>
+
+</LinearLayout>

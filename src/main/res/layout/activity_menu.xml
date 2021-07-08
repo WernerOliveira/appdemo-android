@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
-    android:orientation="vertical"
-    tools:context=".MenuActivity">
+    tools:context=".view.MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
 
     <TextView
         android:id="@+id/lblUsuario_menu"
@@ -17,18 +21,33 @@
         android:layout_margin="20dp"
         style="@style/TextoView"/>
 
+
     <Button
-        android:id="@+id/btnMain_menu"
+        android:id="@+id/btn_Chamados_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_verButoes"
+        android:text="@string/btn_chamados"
         style="@style/BotaoSecundario"/>
 
     <Button
-        android:id="@+id/btnToast_menu"
+        android:id="@+id/btnUsuarios_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_toast"
+        android:text="@string/btn_usuarios"
+        style="@style/BotaoSecundario"/>
+
+    <Button
+        android:id="@+id/btnAtivos_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_ativos"
+        style="@style/BotaoSecundario"/>
+
+    <Button
+        android:id="@+id/btnApi_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_api"
         style="@style/BotaoSecundario"/>
 
     <Button
@@ -36,8 +55,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_logout"
-        android:layout_marginTop="330dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="20dp"
         style="@style/BotaoLogout"/>
 
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

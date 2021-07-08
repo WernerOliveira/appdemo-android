@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/lblUsuario_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Placa"
+            android:layout_margin="20dp"
+            style="@style/TextoView"/>
+
+        <EditText
+            android:id="@+id/txtConsulta"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnConsultaCEP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultar"
+            style="@style/BotaoSecundario"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/lblRetorno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=". . ."/>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/lblUsuario_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ativos"
+            android:layout_margin="20dp"
+            style="@style/TextoView"/>
+
+        <Button
+            android:id="@+id/btnComputadores_ativos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_computadores"
+            style="@style/BotaoSecundario"/>
+
+        <Button
+            android:id="@+id/btnImpressoras_ativos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_impressoras"
+            style="@style/BotaoSecundario"/>
+
+        <Button
+            android:id="@+id/btnOutros_ativos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_outros"
+            style="@style/BotaoSecundario"/>
+
+    </LinearLayout>
+</ScrollView>

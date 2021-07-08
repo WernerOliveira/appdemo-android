@@ -4,6 +4,10 @@
     <color name="BtnPrimarioTxt">#FCFDFD</color>
     <color name="FundoPrimario">#759C9C</color>
     <color name="FundoDarko">#878787</color>
+    <color name="TopoCor">#3800b3</color>
+    <color name="PixSaldo">#3AB5F8</color>
+    <color name="btnAdd">#98D832</color>
+    <color name="glpiBg">#1D66A6</color>
     <color name="colorPrimaryDark">#475050</color>
     <color name="colorDarkoDark">#4C4A4A</color>
     <color name="BtnSecundario">#6FB6ED</color>
@@ -20,4 +24,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="BtnTerceiro">#539FFF</color>
+    <color name="FundoTerceiro">#2D62EA</color>
+    <color name="btnAdicionar">#4478DF</color>
+    <color name="BtnQuarto">#A4B1BC</color>
 </resources>

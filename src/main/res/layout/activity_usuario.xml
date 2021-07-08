@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".view.UsuarioActivity">
+
+    <TextView
+        style="@style/TextoView"
+        android:id="@+id/lblId_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"/>
+
+    <TextView
+        style="@style/TextoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_login"/>
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/txtLogin_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!---->
+
+    <TextView
+        style="@style/TextoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_senha"/>
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/txtSenha_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+    <!---->
+
+    <TextView
+        style="@style/TextoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_email"/>
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/txtEmail_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+
+    <!---->
+
+    <TextView
+        style="@style/TextoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_telefone"/>
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/txtTelefone_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"/>
+
+    <!---->
+
+    <TextView
+        style="@style/TextoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_tipo"/>
+
+    <Spinner
+        android:layout_marginBottom="20dp"
+        android:id="@+id/spiTipo_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!---->
+
+    <Button
+        android:id="@+id/btnExcluir_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_text"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        style="@style/BotaoLogout" />
+
+</LinearLayout>

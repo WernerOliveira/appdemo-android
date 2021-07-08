@@ -1,4 +1,4 @@
-package com.example.opts;
+package com.example.opts.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,11 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.opts.R;
+import com.example.opts.config.Globais;
+import com.example.opts.controller.UsuarioController;
+import com.example.opts.model.Usuario;
 
 public class LogeenActivity extends AppCompatActivity {
 
@@ -36,38 +41,27 @@ public class LogeenActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    //abrir tela se o login estiver correto
-                    if (txtUser.getText().toString().equals("a") && txtPass.getText().toString().equals("a")){
+                UsuarioController controller = new UsuarioController(context);
+                Usuario user = controller.login(txtUser.getText().toString(), txtPass.getText().toString());
 
-                        //se acertar os dados de acesso, salva eles no SharedPreferences pra nao pedir login novamente
-                        SharedPreferences.Editor editor = sharedPreferences.edit();
-                        editor.putString("usuario", txtUser.getText().toString());
-                        if (editor.commit()) {
-                            Intent tela = new Intent(context, MenuActivity.class);
-                            startActivity(tela);
-                        } else {
-                            exibirToast("OHNO! Robô deu erro!");
-                        }
-
-                        //atraves da tela atual, abre a tela Calculadora
-                        Intent tela = new Intent(context, MenuActivity.class);
-                        startActivity(tela);
-                        //finish(); //fecha a tela atual
-                    } else {
-                        exibirToast("Dados inválidos");
-                    }
-                } catch (Exception ex) {
-                    exibirToast("teste" + ex.getMessage());
+                if (user != null) {
+                    Intent tela = new Intent(context, MenuActivity.class);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("usuario", txtUser.getText().toString());
+                    editor.putString("chavePix", "12345678910");
+                    startActivity(tela);
+                    finish();
+                } else {
+                    Globais.exibirToast(context, "Usuário/senha inválidos");
                 }
             }
         });
 
-        String nome_usuario = sharedPreferences.getString("usuario", "");
+        /*String nome_usuario = sharedPreferences.getString("usuario", "");
         if (!nome_usuario.equals("")) {
             Intent tela = new Intent(context, MenuActivity.class);
             startActivity(tela);
-        }
+        }*/
     }
 
     private void esconderTeclado(){

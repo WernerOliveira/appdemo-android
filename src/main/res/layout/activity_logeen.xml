@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/FundoDarko"
+    android:background="@color/glpiBg"
     android:scrollbarAlwaysDrawVerticalTrack="true">
 
     <TextView
@@ -15,7 +15,7 @@
         android:gravity="center_horizontal"
         android:textSize="22sp"
         android:textColor="@android:color/white"
-        android:text="@string/text_login" />
+        android:text="@string/text_glpi" />
 
     <RelativeLayout
         android:background="@drawable/layout_bg_border"
@@ -75,16 +75,5 @@
         </LinearLayout>
 
     </RelativeLayout>
-
-    <ImageButton
-        android:id="@+id/user_profile_photo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/login_title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/user_avatar_bg"
-        android:elevation="10dp"
-        android:src="@drawable/ic_avatar_w_p30" />
 
 </RelativeLayout>

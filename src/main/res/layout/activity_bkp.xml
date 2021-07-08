@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/lblUsuario_menuX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:layout_margin="20dp"
+            style="@style/TextoView"/>
+
+        <Button
+            android:id="@+id/btnMain_menuX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_verButoes"
+            style="@style/BotaoSecundario"/>
+
+        <Button
+            android:id="@+id/btnCalculadora_menuX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Calculadora"
+            style="@style/BotaoSecundario"/>
+
+        <Button
+            android:id="@+id/btnPix_menuX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Pix"
+            style="@style/BotaoSecundario"/>
+
+        <Button
+            android:id="@+id/btnListaUsuarios_menuX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_ListaUsers"
+            style="@style/BotaoSecundario"/>
+
+        <Button
+            android:id="@+id/btnToast_menuX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_toast"
+            style="@style/BotaoSecundario"/>
+
+        <Button
+            android:id="@+id/btn_Chamados_menuX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_chamados"
+            style="@style/BotaoSecundario"/>
+
+        <Button
+            android:id="@+id/btnUsuarios_menuX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_usuarios"
+            style="@style/BotaoSecundario"/>
+
+        <Button
+            android:id="@+id/btnAtivos_menuX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_ativos"
+            style="@style/BotaoSecundario"/>
+
+        <Button
+            android:id="@+id/btnApi_menuX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_api"
+            style="@style/BotaoSecundario"/>
+
+        <Button
+            android:id="@+id/btnLogout_menuX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_logout"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="20dp"
+            style="@style/BotaoLogout"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,4 +1,4 @@
-package com.example.opts;
+package com.example.opts.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.opts.R;
 
 public class LoginActivity extends AppCompatActivity {
 
