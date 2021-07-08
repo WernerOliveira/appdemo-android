@@ -56,7 +56,7 @@ public class ApiTask extends AsyncTask<String, Void, String> {
                 retorno.append("Situação: " + objeto.getString("situacao") + "\n\n");
                 retorno.append("Placa: " + objeto.getString("placa") + "\n\n");
             } else{
-                retorno.append("Aguardo 1 minuto antes de fazer outra requisição");
+                retorno.append("Por favor, aguarde 1 minuto \n antes de fazer outra requisição");
             }
             textView.setText(retorno.toString());
         } catch (JSONException e) {
