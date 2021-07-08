@@ -39,65 +39,26 @@ public class ApiTask extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPostExecute(String s) {
-        /*try {
+        try {
             JSONObject jsonRequest = new JSONObject(s);
 
-            JSONArray objeto = jsonRequest.getJSONArray("data");
+            int code = jsonRequest.getInt("code");
 
             StringBuilder retorno = new StringBuilder("");
-            for(int i = 0; i < objeto.length(); i++){
-                JSONObject obj = objeto.getJSONObject(i);
-                retorno.append("Categoria: " + obj.getString("modelo") + "\n");
+            if(code == 200) {
+                JSONObject objeto = jsonRequest.getJSONObject("data");
 
-                if(obj.has("data")){
-                    JSONArray eventos = obj.getJSONArray("data");
-                    for(int ie = 0 ; ie< eventos.length(); ie++){
-                        JSONObject event = eventos.getJSONObject(ie);
-
-                        retorno.append("Teste: " + event.getString("cor") + "\n");
-                        retorno.append(event.getString("ano") + "\n\n");
-                    }
-                }
+                retorno.append("Ano: " + objeto.getString("ano") + "\n\n");
+                retorno.append("Cor: " + objeto.getString("cor") + "\n\n");
+                retorno.append("Modelo: " + objeto.getString("modelo") + "\n\n");
+                retorno.append("Estado: " + objeto.getString("uf") + "\n\n");
+                retorno.append("Município: " + objeto.getString("municipio") + "\n\n");
+                retorno.append("Situação: " + objeto.getString("situacao") + "\n\n");
+                retorno.append("Placa: " + objeto.getString("placa") + "\n\n");
+            } else{
+                retorno.append("Aguardo 1 minuto antes de fazer outra requisição");
             }
             textView.setText(retorno.toString());
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
-        try {
-            JSONObject jsonRequest = new JSONObject(s);
-
-            JSONObject objeto = jsonRequest.getJSONObject("data");
-
-            StringBuilder retorno = new StringBuilder("");
-
-            retorno.append("Ano: " + objeto.getString("ano") + "\n\n");
-            retorno.append("Cor: " + objeto.getString("cor") + "\n\n");
-            retorno.append("Modelo: " + objeto.getString("modelo") + "\n\n");
-            retorno.append("Estado: " + objeto.getString("uf") + "\n\n");
-            retorno.append("Município: " + objeto.getString("municipio") + "\n\n");
-            retorno.append("Situação: " + objeto.getString("situacao") + "\n\n");
-            retorno.append("Placa: " + objeto.getString("placa") + "\n\n");
-
-            textView.setText(retorno.toString());
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        try {
-            JSONObject jsonRequest = new JSONObject(s);
-
-            JSONObject objeta = jsonRequest.getJSONObject("error");
-
-            StringBuilder retorne = new StringBuilder("");
-
-            retorne.append("Por favor, espere 1 minuto antes de fazer outra busca" + objeta.getString("error") + "\n\n");
-            retorne.append("Placa: " + objeta.getString("plate") + "\n\n");
-
-            textView.setText(retorne.toString());
         } catch (JSONException e) {
             e.printStackTrace();
         } catch (Exception e) {
